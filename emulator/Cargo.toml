@@ -1,0 +1,4 @@
+[package]
+name = "mos_6502_emulator"
+version = "0.3.0"
+edition = "2021"
