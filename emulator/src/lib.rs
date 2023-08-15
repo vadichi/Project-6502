@@ -15,6 +15,17 @@
  * with Project 6502. If not, see <https://www.gnu.org/licenses/>.
  */
 
-fn main() {
-    println!("Hello, world!");
+pub fn add(left: usize, right: usize) -> usize {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
 }
